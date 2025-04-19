@@ -1,6 +1,12 @@
 def missingNumber(nums: list[int]) -> int:
-  for i in range(len(nums)+1):
-    if i not in nums:
+  x = set(nums)
+  
+  for i in range(len(x)+1):
+    if i not in x:
       print(i)
+
+  # for i in range(len(nums)+1):
+  #   if i not in nums:
+  #     print(i)
     
-missingNumber([9,6,4,2,3,5,7,0,1])
+missingNumber([0,1])
